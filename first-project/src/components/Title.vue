@@ -7,9 +7,9 @@
         <p class="hello-style text-4xl">{{ title }}</p>
 
         <div class="flex flex-row space-x-3">
-            <RouterLink to="/" class="hover:text-blue-600 underline">Go to Page</RouterLink>
+            <RouterLink to="/" class="hover:text-blue-600 underline">Go to Essential</RouterLink>
             <p>/</p>
-            <RouterLink to="/about" class="hover:text-blue-600 underline">Go to About</RouterLink>
+            <RouterLink to="/about" class="hover:text-blue-600 underline">Go to Components-in-depth</RouterLink>
         </div>
     </div>
 </template>
