@@ -3,6 +3,7 @@
 
     const message = ref("")
     const checkedNames = ref([])
+    
     const result = () => {
         if (checkedNames.value.length > 0) {
             alert(`${checkedNames.value.join(', ')} is going to ${message.value}`)
