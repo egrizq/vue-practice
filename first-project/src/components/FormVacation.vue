@@ -6,7 +6,8 @@
     
     const result = () => {
         if (checkedNames.value.length > 0) {
-            alert(`${checkedNames.value.join(', ')} is going to ${message.value}`)
+            let destination = !message.value ? "knownwhere" : message.value
+            alert(`${checkedNames.value.join(', ')} is going to ${destination}`)
         } else {
             alert("there's no data!")
         }

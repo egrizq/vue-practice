@@ -5,6 +5,10 @@
     const incrementCounter = () => {
         counter.value++
     }
+
+    const resetCounter = () => {
+      counter.value = 0
+    }
 </script>
 
 <template>
@@ -15,7 +19,16 @@
             <button @click="incrementCounter" 
                 class="p-2 border border-black rounded-md hover:bg-black hover:text-white">
                     Click me!
+                  </button>
+            
+            <button 
+                v-if="counter >= 2" 
+              @click="resetCounter" 
+              class="p-2 border border-black rounded-md"
+            >
+              Reset!
             </button>
+            
             <div class="p-2">
                 <span>Counting: {{ counter }}</span>
             </div>
